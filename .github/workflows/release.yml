@@ -7,7 +7,7 @@ on:
     branches:
       - "main"
 jobs:
-  dire_bonjour:
+  release:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3 # Récupère le contenu du dépôt correspondant au commit du workflow en cours
