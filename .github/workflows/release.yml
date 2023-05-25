@@ -18,7 +18,7 @@ jobs:
         run: docker image build --tag=echo:latest ./
       - name: "Say Hello"
         id: test-data
-        run: docker run echo:latest hello world    
+        run: docker run echo:latest hello world > $GITHUB_OUTPUT    
       - uses: nick-fields/assert-action@v1
         with:
           expected: hello world
