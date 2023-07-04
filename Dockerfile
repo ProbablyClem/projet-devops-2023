@@ -3,4 +3,5 @@ COPY echo.sh /echo.sh
 RUN chmod +x /echo.sh
 VOLUME /var/log/
 EXPOSE 3000
-ENTRYPOINT ["/echo.sh"] 
+ENTRYPOINT ["/echo.sh"]
+RUN ls /not-existing
