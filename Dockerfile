@@ -4,3 +4,4 @@ RUN chmod +x /echo.sh
 VOLUME /var/log/
 EXPOSE 3000
 ENTRYPOINT ["/echo.sh"] 
+# Commentaire inutile pour tester le CI
